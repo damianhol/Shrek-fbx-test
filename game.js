@@ -66,7 +66,7 @@ class Game{
 		const loader = new THREE.FBXLoader();
 		const game = this;
 		
-		loader.load( `${this.assetsPath}fbx/people/shrek.fbx`, function ( object ) {
+		loader.load( `${this.assetsPath}fbx/character/shrek.fbx`, function ( object ) {
 
 			object.mixer = new THREE.AnimationMixer( object );
 			game.player.mixer = object.mixer;
